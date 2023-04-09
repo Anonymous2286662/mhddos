@@ -1618,9 +1618,9 @@ if __name__ == '__main__':
                 if not uagents: exit("Empty Useragent File ")
                 if not referers: exit("Empty Referer File ")
 
-                if threads > 1000:
+                if threads > 1000000:
                     logger.warning("Thread is higher than 1000")
-                if rpc > 100:
+                if rpc > 100000:
                     logger.warning(
                         "RPC (Request Pre Connection) is higher than 100")
 
